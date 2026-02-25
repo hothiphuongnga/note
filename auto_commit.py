@@ -6,7 +6,7 @@ import random
 
 # Đường dẫn tới repository
 REPO_PATH = "/Users/phuongnga/Documents/Project/note"  # Thay bằng đường dẫn thực tế tới thư mục repository của bạn
-COMMIT_MESSAGE = "Auto commit for day {}"
+COMMIT_MESSAGE = "commit for day {}"
 FILE_NAME = "auto_commit.txt"  # Tệp sẽ được chỉnh sửa để tạo commit
 
 # Đảm bảo đang ở trong thư mục repository
@@ -31,7 +31,7 @@ def create_commit_for_date(date):
     )
 
 # Tạo commit cho 365 ngày (chỉ Thứ 2 → Thứ 6)
-start_date = datetime.datetime(2024, 1, 1)
+start_date = datetime.datetime(2024, 3, 1)
 for i in range(30):
     current_date = start_date + datetime.timedelta(days=i)
 
